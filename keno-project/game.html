@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li><img src="img/Group13.png" alt=""></li>
+        <li>
+            <div class="first_block">
+                <p>БАЛАНС <span id="balance">120</span> TJK</p>
+            </div>
+        </li>
+        <li></li>
+    </ul>
+
+    <!-- game part -->
+    <div class="main">
+        <div class="main-container">
+            <div id="board"></div>
+            <div id="results">
+                <div id="drawnNumbers"></div>
+                <div id="hits"></div>
+            </div>
+        </div>
+
+        <div id="controls">
+            <p id="message"></p>
+            <input type="number" id="betAmount" value="10" min="1" placeholder="Введите ставку">
+            <button id="startGame">Ставка</button>
+            <button id="resetGame">Повтор</button>
+            <button id="randomGame">Случайно</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

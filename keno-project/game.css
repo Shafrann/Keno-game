@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background: url('img/Rectangle1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 16px 32px;
+    height: 50px;
+    background: #121327;
+    color: white;
+
+}
+
+
+.first_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 43px;
+    background: linear-gradient(275.76deg, #7158E2 44.33%, #CD84F1 98.56%);
+
+    border-radius: 5px;
+    border: 0.2px solid white;
+}
+
+.drawn_block {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 560px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.161);
+    border-radius: 5px;
+    border: 0.2px solid white;
+
+
+}
+
+
+
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(136.36deg, rgba(106, 106, 106, 0.4) -7.11%, rgba(64, 64, 64, 0.4) 111.34%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    user-select: none;
+    transition: background-color 0.3s;
+    border-radius: 12px;
+    color: #FFFFFF;
+
+}
+
+.cell.selected {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.cell.hit {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+.cell.match {
+    background-color: #0000ff;
+    color: #fff;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#controls input {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#controls button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+
+
+#controls button:hover {
+    background-color: #1a801d;
+}
+
+#controls button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+#controls button:hover {
+    background-color: #1a801d;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+}
+
+
+#message {
+    font-size: 18px;
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#results h2 {
+    margin-bottom: 10px;
+}
+
+#drawnNumbers,
+#hits {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-gap: 5px;
+}
+
+#drawnNumbers .cell.match{
+    background-color: #0000ff;  /* Ненайденные числа - синий */
+    color: #fff;
+}
+
+
+#drawnNumbers .cell,
+#hits .cell {
+    background-color:#ff5722;;
+    color: #ffffff;
+}
+
+
+.cell.match {
+    background-color: #0000ff;
+    color: #fff;
+}
+
+.cell.hit {
+    background-color: #ff5722; 
+    color: #fff;
+}
+
+#betAmount{
+    border-radius: 12px;
+    border: none;
+    color: rgb(0, 0, 0) ;
+}
+
